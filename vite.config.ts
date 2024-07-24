@@ -23,10 +23,10 @@ export default defineConfig({
             }
         }
     },
-    resolve:{
+    resolve: {
         alias: {
-            '@src': resolve('src'),
-        }
+            '@': '/src',
+        },
     },
     plugins: [
         vue(),
@@ -68,6 +68,7 @@ export default defineConfig({
                     // 可以在这里定义自定义的代码分割策略
                     'vue': ['vue'],
                     'naive-ui': ['naive-ui'],
+                    'vicons': ['@vicons/ionicons5'],
                 },
             },
         },
